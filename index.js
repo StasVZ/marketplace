@@ -1,9 +1,21 @@
 'use strict';
 
 
-const product_name = 'Ford Mustang';
-const product_quantity = '5';
-const product_category = 'muscle car';
-const product_price = '71000';
+const productName = 'Ford Mustang';
+console.log('productName' ,typeof productName);
+const productQuantity = 5;
+console.log('productQuantity ' ,typeof productQuantity );
+const productCategory = 'muscle car';
+console.log('productCategory' ,typeof productCategory);
+const productPrice = 71000;
+console.log('productPrice' ,typeof productPrice);
 
-console.log (product_quantity*product_price);
+console.log (productQuantity*productPrice);
+console.log (`В гараже ${productQuantity} автомобилей ${productName} на сумму ${productQuantity*productPrice} евро. `)
+
+{
+  const productName  = prompt('Наименование товара')
+  const productQuantity  = prompt('Количество товара')
+  const productCategory  = prompt('Категория товара')
+  const productPrice  = prompt('Цена товара')
+}
